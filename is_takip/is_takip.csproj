@@ -88,6 +88,9 @@
     <Compile Include="Entity\TblAdmin.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\TblCagrilar.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\TblDepartmanlar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -109,11 +112,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmAnaForm.Designer.cs">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmDepartamanlar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\FrmDepartamanlar.Designer.cs">
       <DependentUpon>FrmDepartamanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmGorev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmGorev.Designer.cs">
+      <DependentUpon>FrmGorev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmGorevDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmGorevDetay.Designer.cs">
+      <DependentUpon>FrmGorevDetay.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FrmGorevListesi.cs">
       <SubType>Form</SubType>
@@ -138,8 +159,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmAnaForm.resx">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmDepartamanlar.resx">
       <DependentUpon>FrmDepartamanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmGorev.resx">
+      <DependentUpon>FrmGorev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmGorevDetay.resx">
+      <DependentUpon>FrmGorevDetay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmGorevListesi.resx">
       <DependentUpon>FrmGorevListesi.cs</DependentUpon>

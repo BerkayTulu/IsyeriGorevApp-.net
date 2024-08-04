@@ -23,8 +23,8 @@ namespace is_takip.Formlar
             lblToplamDepartman.Text = db.TblDepartmanlar.Count().ToString();
             lblToplamPersonel.Text = db.TblPersonel.Count().ToString();
             lblFirmaSayisi.Text = db.TblFirmalar.Count().ToString();
-            lblAktifis.Text = db.TblGorevler.Count(x => x.Durum == "1").ToString();
-            lblPasifis.Text = db.TblGorevler.Count(x => x.Durum == "0").ToString();
+            lblAktifis.Text = db.TblGorevler.Count(x => x.Durum == true).ToString();
+            lblPasifis.Text = db.TblGorevler.Count(x => x.Durum == false).ToString();
             lblSonGorev.Text = db.TblGorevler.OrderByDescending(x => x.ID).Select(y => y.Aciklama).FirstOrDefault();
             lblSehirSayisi.Text = db.TblFirmalar.Select(x => x.il).Distinct().Count().ToString();
             lblSektorSayisi.Text = db.TblFirmalar.Select(x => x.Sektör).Distinct().Count().ToString();

@@ -49,5 +49,28 @@ namespace is_takip
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void btnGorevTanimla_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmGorev fr = new Formlar.FrmGorev();
+            fr.Show();
+        }
+
+        private void btnGorevDetay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmGorevDetay fr = new Formlar.FrmGorevDetay();
+            fr.Show();
+        }
+
+        Formlar.FrmAnaForm frmAnaSayfa;
+        private void btnAnaSayfa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmAnaSayfa == null || frmAnaSayfa.IsDisposed)
+            {
+                frmAnaSayfa = new Formlar.FrmAnaForm();
+                frmAnaSayfa.MdiParent = this;
+                frmAnaSayfa.Show();
+            }
+        }
     }
 }
